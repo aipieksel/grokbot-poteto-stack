@@ -2,7 +2,15 @@
 
 Maintained by [aipieksel](https://github.com/aipieksel).
 
-A portable operator workflow with named specialists, evidence-based handoffs, and per-project context on disk. This package supplies instructions and local templates; it does not provision bots, install connectors, or call paid APIs.
+GrokBot Poteto Stack is an operator workflow for complex assistant work. It gives an operator a way to describe a job, hand bounded pieces to named specialists, collect evidence, and keep project context on disk for the next session. The package contains instructions, adapters, templates, and local helpers; it does not provision bots or connect services for you.
+
+Start by seeding an `operating-system/` folder in an existing project, then fill in its goals and context. Load the skill in an assistant that supports it and use only the specialist or browser capabilities available in that session. The operator remains responsible for decisions, approvals, and verification.
+
+## How a task moves
+
+1. The operator writes a job packet with scope, context, and expected evidence.
+2. Available specialists return findings to the shared project context.
+3. The operator reviews the handoff and decides the next authorized action.
 
 ## Start
 
